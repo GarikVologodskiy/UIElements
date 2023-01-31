@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F3CA16C7298530E200A3265F /* UISegmentedControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISegmentedControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CA16C7298530E200A3265F /* UIElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CA16CA298530E200A3265F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3CA16CC298530E200A3265F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F3CA16CE298530E200A3265F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		F3CA16BE298530E200A3265F = {
 			isa = PBXGroup;
 			children = (
-				F3CA16C9298530E200A3265F /* UISegmentedControl */,
+				F3CA16C9298530E200A3265F /* UIElements */,
 				F3CA16C8298530E200A3265F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		F3CA16C8298530E200A3265F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F3CA16C7298530E200A3265F /* UISegmentedControl.app */,
+				F3CA16C7298530E200A3265F /* UIElements.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F3CA16C9298530E200A3265F /* UISegmentedControl */ = {
+		F3CA16C9298530E200A3265F /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
 				F3CA16CA298530E200A3265F /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				F3CA16D5298530E300A3265F /* LaunchScreen.storyboard */,
 				F3CA16D8298530E300A3265F /* Info.plist */,
 			);
-			path = UISegmentedControl;
+			path = UIElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F3CA16C6298530E200A3265F /* UISegmentedControl */ = {
+		F3CA16C6298530E200A3265F /* UIElements */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3CA16DB298530E300A3265F /* Build configuration list for PBXNativeTarget "UISegmentedControl" */;
+			buildConfigurationList = F3CA16DB298530E300A3265F /* Build configuration list for PBXNativeTarget "UIElements" */;
 			buildPhases = (
 				F3CA16C3298530E200A3265F /* Sources */,
 				F3CA16C4298530E200A3265F /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = UISegmentedControl;
+			name = UIElements;
 			productName = UISegmentedControl;
-			productReference = F3CA16C7298530E200A3265F /* UISegmentedControl.app */;
+			productReference = F3CA16C7298530E200A3265F /* UIElements.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F3CA16C2298530E200A3265F /* Build configuration list for PBXProject "UISegmentedControl" */;
+			buildConfigurationList = F3CA16C2298530E200A3265F /* Build configuration list for PBXProject "UIElements" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3CA16C6298530E200A3265F /* UISegmentedControl */,
+				F3CA16C6298530E200A3265F /* UIElements */,
 			);
 		};
 /* End PBXProject section */
@@ -289,7 +289,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5B99WJ3Z7D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UISegmentedControl/Info.plist;
+				INFOPLIST_FILE = UIElements/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -300,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.imagine.vologodskii.UISegmentedControl;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.imagine.vologodskii.UIElements;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,7 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5B99WJ3Z7D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UISegmentedControl/Info.plist;
+				INFOPLIST_FILE = UIElements/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.imagine.vologodskii.UISegmentedControl;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.imagine.vologodskii.UIElements;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F3CA16C2298530E200A3265F /* Build configuration list for PBXProject "UISegmentedControl" */ = {
+		F3CA16C2298530E200A3265F /* Build configuration list for PBXProject "UIElements" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F3CA16D9298530E300A3265F /* Debug */,
@@ -348,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F3CA16DB298530E300A3265F /* Build configuration list for PBXNativeTarget "UISegmentedControl" */ = {
+		F3CA16DB298530E300A3265F /* Build configuration list for PBXNativeTarget "UIElements" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F3CA16DC298530E300A3265F /* Debug */,
