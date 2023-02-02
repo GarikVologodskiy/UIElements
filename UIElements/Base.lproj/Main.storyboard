@@ -33,7 +33,7 @@
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNR-gd-let">
-                                        <rect key="frame" x="8" y="185" width="351" height="20"/>
+                                        <rect key="frame" x="8" y="185" width="359" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -63,24 +63,33 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="XyT-Mf-tUE">
+                                        <rect key="frame" x="19" y="528" width="329" height="216"/>
+                                        <connections>
+                                            <action selector="changeDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="QpW-QQ-DWM"/>
+                                        </connections>
+                                    </datePicker>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="8Ax-fv-Chj" firstAttribute="trailing" secondItem="JaI-kA-VKh" secondAttribute="trailing" id="1li-iV-cjX"/>
-                                    <constraint firstItem="8Ax-fv-Chj" firstAttribute="centerX" secondItem="KNR-gd-let" secondAttribute="centerX" id="454-Xc-sYi"/>
+                                    <constraint firstItem="8Ax-fv-Chj" firstAttribute="centerX" secondItem="KNR-gd-let" secondAttribute="centerX" constant="-4" id="454-Xc-sYi"/>
+                                    <constraint firstItem="XyT-Mf-tUE" firstAttribute="top" secondItem="WXX-OM-PsC" secondAttribute="bottom" constant="34" id="4rE-XH-1nh"/>
                                     <constraint firstItem="JaI-kA-VKh" firstAttribute="trailing" secondItem="WXX-OM-PsC" secondAttribute="trailing" id="6dA-m4-U16"/>
                                     <constraint firstItem="atJ-8f-GUW" firstAttribute="top" secondItem="wTl-d5-fcf" secondAttribute="top" constant="114" id="8QR-ZZ-Z2W"/>
                                     <constraint firstItem="JaI-kA-VKh" firstAttribute="top" secondItem="8Ax-fv-Chj" secondAttribute="bottom" constant="47" id="Aag-Uw-WIk"/>
                                     <constraint firstItem="WXX-OM-PsC" firstAttribute="top" secondItem="JaI-kA-VKh" secondAttribute="bottom" constant="94" id="E88-a5-iOJ"/>
                                     <constraint firstItem="atJ-8f-GUW" firstAttribute="centerX" secondItem="wTl-d5-fcf" secondAttribute="centerX" id="J7g-co-ykw"/>
                                     <constraint firstItem="atJ-8f-GUW" firstAttribute="leading" secondItem="wTl-d5-fcf" secondAttribute="leading" constant="84" id="Jkc-Jq-Lmm"/>
-                                    <constraint firstItem="atJ-8f-GUW" firstAttribute="centerX" secondItem="KNR-gd-let" secondAttribute="centerX" id="MFI-Tp-QB9"/>
+                                    <constraint firstItem="atJ-8f-GUW" firstAttribute="centerX" secondItem="KNR-gd-let" secondAttribute="centerX" constant="-4" id="MFI-Tp-QB9"/>
+                                    <constraint firstAttribute="trailing" secondItem="XyT-Mf-tUE" secondAttribute="trailing" constant="19" id="Q63-bU-zvg"/>
                                     <constraint firstAttribute="trailing" secondItem="8Ax-fv-Chj" secondAttribute="trailing" constant="84" id="S3d-r2-CFb"/>
                                     <constraint firstItem="8Ax-fv-Chj" firstAttribute="leading" secondItem="JaI-kA-VKh" secondAttribute="leading" id="auR-dY-0QW"/>
-                                    <constraint firstAttribute="bottom" secondItem="WXX-OM-PsC" secondAttribute="bottom" constant="306" id="g6J-Ae-bAe"/>
+                                    <constraint firstItem="XyT-Mf-tUE" firstAttribute="leading" secondItem="wTl-d5-fcf" secondAttribute="leading" constant="19" id="dbf-R2-QGM"/>
                                     <constraint firstItem="8Ax-fv-Chj" firstAttribute="top" secondItem="KNR-gd-let" secondAttribute="bottom" constant="50" id="hZs-TU-FAj"/>
                                     <constraint firstItem="KNR-gd-let" firstAttribute="leading" secondItem="wTl-d5-fcf" secondAttribute="leadingMargin" id="iDK-6R-TwO"/>
                                     <constraint firstItem="JaI-kA-VKh" firstAttribute="leading" secondItem="WXX-OM-PsC" secondAttribute="leading" id="ksx-oi-8kh"/>
                                     <constraint firstItem="KNR-gd-let" firstAttribute="top" secondItem="atJ-8f-GUW" secondAttribute="bottom" constant="41" id="mUx-9u-z5O"/>
+                                    <constraint firstAttribute="bottom" secondItem="XyT-Mf-tUE" secondAttribute="bottom" constant="204" id="vLb-YP-Jq4"/>
                                     <constraint firstItem="8Ax-fv-Chj" firstAttribute="leading" secondItem="wTl-d5-fcf" secondAttribute="leading" constant="84" id="x6o-J7-1ec"/>
                                 </constraints>
                             </scrollView>
@@ -92,10 +101,12 @@
                             <constraint firstItem="wTl-d5-fcf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="g7i-EN-iZI"/>
                             <constraint firstItem="wTl-d5-fcf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jP5-yD-1nT"/>
                             <constraint firstItem="wTl-d5-fcf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="lkB-XP-1Et"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wTl-d5-fcf" secondAttribute="bottom" id="o6Z-bq-0Y5"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="393" height="1000"/>
                     <connections>
+                        <outlet property="datePicker" destination="XyT-Mf-tUE" id="VJc-o7-3jn"/>
                         <outlet property="label" destination="KNR-gd-let" id="uHn-yc-vqh"/>
                         <outlet property="segmentedControl" destination="atJ-8f-GUW" id="hV6-VV-IWY"/>
                         <outlet property="slider" destination="8Ax-fv-Chj" id="ccT-qa-PnD"/>

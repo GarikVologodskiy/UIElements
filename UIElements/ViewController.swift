@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -32,6 +33,9 @@ class ViewController: UIViewController {
         slider.minimumTrackTintColor = .yellow
         slider.maximumTrackTintColor = .red
         slider.thumbTintColor = .blue
+        
+        //DatePicker localization
+        datePicker.locale = Locale(identifier: "en_US")
     }
 
     @IBAction func choiceSegment(_ sender: UISegmentedControl) {
@@ -55,6 +59,19 @@ class ViewController: UIViewController {
         default:
             print("Something went wrong!")
         }
+    }
+    @IBAction func changeDate(_ sender: UIDatePicker) {
+        
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateStyle = .medium
+        
+        //Date localization
+        dateFormatter.locale = Locale(identifier: "en_US")
+        
+        let dateValue = dateFormatter.string(from: sender.date)
+        
+        label.text = dateValue
     }
     
     @IBAction func sliderAction(_ sender: UISlider) {
